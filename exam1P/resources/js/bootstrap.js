@@ -1,6 +1,7 @@
 import 'bootstrap';
-/* importamos SASS para que  */
+
 import '../sass/app.scss';
+
 
 
 /**
