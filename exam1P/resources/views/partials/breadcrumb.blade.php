@@ -8,9 +8,9 @@
 
 <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="{{ route('apodoInicio') }}">Inicio</a></li>
-    <li class="breadcrumb-item"><a href="{{ route('apodoLogin') }}">Log-in</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('apodoLogin') }}">Log-in</a></li>
+    <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+<!--     <li class="breadcrumb-item"><a href="/login">Log-in Uno</a></li> -->
+    <li class="breadcrumb-item active" aria-current="page"><a href="/log-in">Dirigete al Log-in</a></li>
     <li class="breadcrumb-item active" aria-current="page"><a href="/producto">Búsqueda de productos</a></li>
   </ol>
 </nav>
