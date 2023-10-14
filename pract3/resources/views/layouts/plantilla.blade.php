@@ -10,6 +10,10 @@
 <body>
 
     <!-- Snippet de blade -->
+    @component('partials.nav')
+    @endcomponent
+
+    <!-- Snippet de blade -->
     @include('partials.navbar')
 
     <!-- Snippet de blade -->

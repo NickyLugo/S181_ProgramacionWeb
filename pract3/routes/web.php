@@ -33,3 +33,7 @@ Route::get('/form', function () {
 Route::get('/lo-que-quiero-olvidar', function () {
     return view('recuerdos');
 }); */
+
+Route::get('v1', function () {
+    return view('vista1');
+});

@@ -10,7 +10,7 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Inicio</a></li>
 <!--     <li class="breadcrumb-item"><a href="/login">Log-in Uno</a></li> -->
-    <li class="breadcrumb-item active" aria-current="page"><a href="/log-in">Dirigete al Log-in</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="/log-in">Accede a Log-in</a></li>
     <li class="breadcrumb-item active" aria-current="page"><a href="/producto">Búsqueda de productos</a></li>
   </ol>
 </nav>
