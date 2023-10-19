@@ -7,10 +7,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <!-- Si el request esta posicionado en la ruta de inicio, colorea rojo y si no es inicio, no hagas nada -->
+          <a class="nav-link {{ request()->routeIs('ElInicio')?'text-danger fw-bold':''}}" href="{{ route('ElInicio')}}">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link {{ request()->routeIs('Elformulario')?'text-primary fw-bold':''}}" href="/form">Formulario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{ request()->routeIs('LosRecuerdos')?'text-warning fw-bold':''}}" href="/recuerdos">Recuerdos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
