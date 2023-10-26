@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\validadorFormRecuerdos;
 
 class diarioController extends Controller
 {
@@ -16,11 +17,20 @@ class diarioController extends Controller
     public function metodoRecuerdos(){
         return view('recuerdos');
     }
-    public function guardarRecuerdo( Request $req ){
+    public function guardarRecuerdo( validadorFormRecuerdos $req ){
         /* return 'Se esta procesando tu recuerdo...'; */
-/*         return $req ->all(); */
 
-        echo "<p>";
+        // $validated = $req->validate([
+        //     /* Si esta vacío no lo deja pasar */
+        //     'txtTitulo' => 'required||unique:posts|max:25',
+        //     'txtRecuerdo' => 'required||unique:posts|min:4',
+        // ]);
+
+        /* Ctrl+K+C para comentar cada línea */
+         return redirect ('/form') -> with ('confirmacion', 'Tu recuerdo llegó al controlador');
+/*          return $req ->all(); */
+
+    /* echo "<p>";
         echo $req->ip();
         echo " - ";
         echo $req->path();
@@ -28,6 +38,6 @@ class diarioController extends Controller
         echo $req->method();
         echo " - ";
         echo $req->input('txtTitulo');
-        echo "</p>";
+        echo "</p>"; */
     }
 }

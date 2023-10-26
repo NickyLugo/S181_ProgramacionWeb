@@ -8,11 +8,11 @@
     @vite(['resources/js/app.js'])
     
 </head>
-<body>
-    @component('partials.nav')
-    @endcomponent
-        <x-offcanvas></x-offcanvas>
-    @yield('contenido')
+    <body>
+        @component('partials.nav')
+        @endcomponent
+            <x-offcanvas></x-offcanvas>
+        @yield('contenido')
 
-</body>
+    </body>
 </html>
