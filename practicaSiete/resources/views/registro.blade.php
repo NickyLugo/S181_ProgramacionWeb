@@ -10,6 +10,21 @@
 </style>
 
 @section('contenido')
-    <h1 class="display-1 text-center text-success mt-4"> Registro de libros </h1>
 
+    <div class='container mt-5 col-md-6'> <!-- div container INICIO -->
+        <h1 class="display-3 text-center text-warning"> <!-- No title yet --> </h1>
+        @include('partials.card')
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
 @endsection

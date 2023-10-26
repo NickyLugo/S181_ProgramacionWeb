@@ -4,19 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <div>
-        <img class="background" src="{{ URL('images/bg01.jpg') }}" alt="">
-    </div>
+    <title>Plantilla</title>
     
     @vite(['resources/js/app.js'])
 </head>
-<body>
-    @component('partials.navbar')
-    @endcomponent
 
-</body>
+    <body>
+
+        <header>
+            @component('partials.navbar')
+            @endcomponent
+        </header>
+
+        <main>
+            <!-- Aquí va el contenido principal de tu página -->
+            @yield('contenido')
+        </main>
+
+        <footer>
+            @component('partials.footer')
+            @endcomponent
+        </footer>
+
+    </body>
+
 </html>
 
 <!-- Sobre los hallazgos, Caroline Sharp, directora de investigación de la Fundación Nacional para la Investigación Educativa, 
