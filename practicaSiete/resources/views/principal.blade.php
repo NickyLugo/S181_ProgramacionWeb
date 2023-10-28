@@ -15,7 +15,9 @@
         <h1 class="display-3 text-center text-warning"> <!-- No title yet --> </h1>
         @include('partials.card')
     </div>
-    <hr>
+<!--     <div class="datetime text-light">
+        <p>La fecha y hora actual es: {{ $now }}</p>       
+    </div> -->
     <hr>
     <hr>
     <hr>

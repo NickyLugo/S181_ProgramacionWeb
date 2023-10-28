@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Plantilla</title>
     
     @vite(['resources/js/app.js'])
@@ -21,9 +23,10 @@
             @yield('contenido')
         </main>
 
-        <footer>
-            @component('partials.footer')
+        <footer class="footer">
+            @component('partials.footer', ['now' => $now])
             @endcomponent
+
         </footer>
 
     </body>

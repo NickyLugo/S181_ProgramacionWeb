@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\registroController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('principal');
 });
 
@@ -23,5 +23,12 @@ Route::get('/register', function () {
 
 Route::get('/new', function () {
     return view('nueva');
-});
+}); */
 
+/* Rutas individuales para controlador */
+
+Route::get('/',[registroController::class, 'metodoPrincipal']) -> name ('ElPrincipal');
+Route::get('/register',[registroController::class, 'metodoRegistro']) -> name ('ElRegistro');
+
+//Rutas para el request POST del recuerdo
+Route::post('/guardarRegistro',[registroController::class, 'guardarRegistro']) -> name ('guardar');
