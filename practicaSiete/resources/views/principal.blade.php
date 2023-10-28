@@ -24,9 +24,5 @@
     <hr>
     <hr>
     <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
+
 @endsection

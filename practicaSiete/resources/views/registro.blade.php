@@ -26,8 +26,8 @@
         <script>
             Swal.fire({
                 icon: 'success',
-                title: '¡Registro guardado!'
-/*                 text: '{{ session('confirmacion')}}' */
+                title: '¡Registro guardado!',           
+                text: '{{ session('confirmacion')}}',
             })
         </script>
     @endif
@@ -148,13 +148,10 @@
         </div>
     </div> <!-- div card FIN -->
 </div> <!-- div container FIN -->
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
 @endsection

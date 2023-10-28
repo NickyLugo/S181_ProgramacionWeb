@@ -20,6 +20,7 @@ class registroController extends Controller
             return view('registro', ['now' => $now]);
         }
         public function guardarRegistro( validadorFormRegistro $req ){
-             return redirect ('/register') -> with ('confirmacion', 'Tu registro llegó al controlador');
+            
+            return redirect ('/register') -> with('confirmacion', 'El libro guardado es: '.$req->input('txtTitulo'));
         }
 }
